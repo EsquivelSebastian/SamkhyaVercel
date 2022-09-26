@@ -365,6 +365,17 @@ main{
 
 }
 @media (max-width: 920px){
+    #logo,
+    #title{
+        display: none;
+    }
+    body{
+        width: 100vw;
+        height: 100vh;
+    }
+    #icon_menu{
+        padding-right:15px ;
+    }
     .text__information-cover{
         width: 100%;
     }
@@ -381,11 +392,16 @@ main{
         margin-top: -100px;
     }
 
-    #icon_fire{
+    .imgPlace img{
+        width: 5em;
+        height: 5em;
+    }
+    .news,
+    .contact{
         display: none;
     }
-    #icon_heart{
-        left: 0%;
+    .socialNet{
+        margin: 0 auto;
     }
 
     /* *******ANIMACION************* */
