@@ -22,11 +22,13 @@ border-radius: 50%;
 
 header{
     height: 100px;
+    position: relative;
+    z-index: 1;
 }
 
 .container__header{
     
-    
+    background-color: #fbdfd5a4;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -34,13 +36,12 @@ header{
 }
 
 .logo img{
-    height: 130px;
+    height: 100px;
     margin-top: 8px;
     margin-left: 8px;
 }
 
 .menu{
-    padding-top: 50px;
     padding-right: 80px;
 }
 
@@ -58,7 +59,7 @@ header{
 .menu nav ul li a {
     font-size: 16px;
     text-decoration: none;
-    color: #E67E22;
+    color: #fff;
     transition: opacity 300ms;
 
 }
@@ -71,48 +72,24 @@ header{
     display: none;
 }
 
-.titleContainer{
-    display: flex;
 
-}
-
-.titleContainer h1{
-    
-    margin-bottom: 15px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    width: 100%;
-    text-align: center;
-    color: #fff;
-    background-color: #EB984E ;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 2.5em;
-    font-weight: bold;
-}
 
 /*Portada*/
-header{
-    margin-bottom: 70px;
-}
+
 main{
     
     height: calc(100vh + 400px );
-    
-    margin: auto;
-
+    position: relative;
+    margin-top: 0;
+    top: -100px;
 }
 
 .cover{
     display: flex;
     justify-content: center;
     align-items: center;
-    
-    
-   /* background: linear-gradient(rgba(255, 255, 255, .5),
-    rgba(255, 255, 255, .5)),
-    url('../media/asanaCover.jpg');*/
     background-size: cover;
-    padding-top: 40px;
+    
     padding-bottom: 40px;
 }
 
@@ -283,20 +260,15 @@ main{
 
 
 
-/*RESPONSIVE*/
+
 
 
 
 
 @media (max-width: 1024px){
-
-    body{
-        display: block;
-    }
-
     .container__header,
     main{
-        padding: 0px;
+        padding: 20px;
     }
     #icon_menu{
         display: none;
@@ -304,7 +276,10 @@ main{
         display: block;
         color: #121214;
         font-size: 24px;
-        
+    }
+
+    .header__register{
+        display: none;
     }
 
     .menu{
@@ -314,7 +289,7 @@ main{
         top:  70px;
         overflow: hidden;
         z-index: 10;
-        
+        box-shadow: 0px 0px 30px -20px rgba(0,0,0,5);
         transition: all 300ms;
         height: 0%;
 
@@ -335,21 +310,14 @@ main{
     height: 235px;
    }
 
+   .text__information-cover h1{
+    font-size: 40px;
 
+   }
 
-.cover{
-    
-    
-    padding: 0;
-    
-}
-.slider{
-
-    height: 100%;
-    margin-top: 2em;
-    margin-bottom: 0%;
-    
-}
+   .text__information-cover p{
+    font-size: 16px;
+   }
 
    .banner__text h2{
     font-size: 22px;
@@ -365,17 +333,6 @@ main{
 
 }
 @media (max-width: 920px){
-    #logo,
-    #title{
-        display: none;
-    }
-    body{
-        width: 100vw;
-        height: 100vh;
-    }
-    #icon_menu{
-        padding-right:15px ;
-    }
     .text__information-cover{
         width: 100%;
     }
@@ -392,16 +349,11 @@ main{
         margin-top: -100px;
     }
 
-    .imgPlace img{
-        width: 5em;
-        height: 5em;
-    }
-    .news,
-    .contact{
+    #icon_fire{
         display: none;
     }
-    .socialNet{
-        margin: 0 auto;
+    #icon_heart{
+        left: 0%;
     }
 
     /* *******ANIMACION************* */
