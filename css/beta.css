@@ -40,6 +40,13 @@ body{
     --clip: polygon(0 0, 100% 0, 100% 0, 0 0);
     --transform: rotate(-90deg) ;
 }
+.menu__item--active{
+    --transform: rotate(0);
+    --background: #5e7094;
+}
+.menu__item--show{
+    background-color: var(--background);
+}
 .menu__item:hover{
      --clip: polygon(0 0, 100% 0, 100% 100%, 0% 100%); 
      --transform: rotate(0) ;
@@ -64,6 +71,9 @@ body{
 .menu__nesting{
     clip-path: var(--clip);
 }
+.menu__link--inside{
+    padding: 30px 100px 30px 20px;
+}
 .menu__arrow{
     transform: var(--transform);
     transition: transform .3s;
@@ -80,4 +90,69 @@ body{
     width: max-content;
     transform: translateY(100%);
     background-color: black;
+}
+
+.menu__burguer{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    cursor: pointer;
+    padding: 0 15px;
+    display: none;
+}
+
+.menu__img{
+    display: block;
+    width: 36px;
+}
+
+@media (max-width: 800px){
+    .menu__burguer{
+        display: flex;
+    }
+    .menu__item{
+        --clip:0;
+        overflow: hidden;
+    }
+    .menu__links{
+        position: fixed;
+        max-width: 400px;
+        width: 100%;
+        top: 70px;
+        right: 0;
+        bottom: 0;
+        background-color: blue;
+        overflow-y: auto;
+        display: grid;
+        grid-auto-rows: max-content;
+    }
+
+    .menu__link{
+        padding: 25px 0;
+        padding-left: 30px;
+        height: auto;
+    }
+
+    .menu__arrow{
+        margin-left: auto;
+        margin-right: 20px;
+
+    }
+
+    .menu__nesting{
+        display: grid;
+        position: unset;
+        width: 100%;
+        transform: translateY(0);
+        height: 0;
+        transition: height .3s;
+    }
+    .menu__link--inside{
+        width: 90%;
+        margin-left: auto;
+        border-left: 1px solid grey;
+    }
+
+
+
 }
