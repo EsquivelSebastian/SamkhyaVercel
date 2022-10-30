@@ -38,10 +38,23 @@ body{
     height: 100%;
     color: #fff;
     --clip: polygon(0 0, 100% 0, 100% 0, 0 0);
+    --transform: rotate(-90deg) ;
 }
 .menu__item:hover{
      --clip: polygon(0 0, 100% 0, 100% 100%, 0% 100%); 
+     --transform: rotate(0) ;
+    }
 
+.menu__link{
+    color: #fff;
+    text-decoration: none;
+    padding: 0 30px;
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+.menu__link:hover{
+    background-color: bisque;
 }
 
 .menu__item a{
@@ -50,4 +63,21 @@ body{
 
 .menu__nesting{
     clip-path: var(--clip);
+}
+.menu__arrow{
+    transform: var(--transform);
+    transition: transform .3s;
+    display: block;
+    margin-left: 3px;
+}
+.menu__nesting{
+    list-style: none;
+    transition: clip-path .3s;
+    clip-path: var(--clip);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: max-content;
+    transform: translateY(100%);
+    background-color: black;
 }
