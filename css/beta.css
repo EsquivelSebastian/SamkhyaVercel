@@ -11,8 +11,8 @@ body{
 }
 
 .menu{
-    background-color: rgb(68, 47, 120);
-   
+    /* background-color: rgb(68, 47, 120); */
+   background-color: #8c6dbf;
     height: 70px;
 }
 
@@ -61,11 +61,11 @@ body{
     align-items: center;
 }
 .menu__link:hover{
-    background-color: bisque;
+    background-color: #BA629C;;
 }
 
 .menu__item a{
-    color: coral
+    color: #ffe5fe;
 }
 
 .menu__nesting{
@@ -89,7 +89,7 @@ body{
     bottom: 0;
     width: max-content;
     transform: translateY(100%);
-    background-color: black;
+    background-color: #8c6dbf;
 }
 
 .menu__burguer{
