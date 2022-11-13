@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;1,200;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins:wght@200;400&family=Rubik&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -138,13 +139,13 @@ header{
 
 /*Portada*/
 
-main{
+/* main{
     
     height: calc(100vh + 400px );
     position: relative;
     margin-top: 0;
     top: -100px;
-}
+} */
 
 .cover{
     display: flex;
@@ -270,10 +271,8 @@ main{
     justify-content: space-evenly;
     width: 100%;
     height: 40vh;
-    background-color: aliceblue;
 }
 .card{
-    border: 1px solid black;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -283,11 +282,15 @@ main{
     width: 17vw;
     
 }
-.imgContainer{
-    border: 1px solid black;
+#desc{
+    font-family: 'Dancing Script';
+    font-size: 25px;
+}
+
+.imgContainer img{
     border-radius: 100%;
     width: 50%;
-    height: 40%;
+    height: auto;
     margin-top: 30px;
     margin-bottom: auto;
 }
@@ -356,98 +359,43 @@ main{
 
 
 
-@media (max-width: 1024px){
-    .container__header,
-    main{
-        padding: 20px;
-    }
-    #icon_menu{
-        display: none;
-        cursor: pointer;
-        display: block;
-        color: #121214;
-        font-size: 24px;
-    }
-
-    .header__register{
-        display: none;
-    }
-
-    .menu{
-
-        position: absolute;
-        right: 20px;
-        top:  70px;
-        overflow: hidden;
-        z-index: 10;
-        box-shadow: 0px 0px 30px -20px rgba(0,0,0,5);
-        transition: all 300ms;
-        height: 0%;
-
-    }
-
-    .menu nav ul{
-        padding: 20px 0px;
-        flex-direction: column;
-        background: #fff;
-    }
-
-    .menu nav ul li{
-        position: 10px 40px;
-
-    }
-
-   .drop_down_menu{
-    height: 235px;
-   }
-
-   .text__information-cover h1{
-    font-size: 40px;
-
-   }
-
-   .text__information-cover p{
-    font-size: 16px;
-   }
-
-   .banner__text h2{
-    font-size: 22px;
-   }
-
-   #icon_heart{
-    left: -60px;
-   }
-
-   .banner__icon-fire{
-    right: -20px;
-   }
-
-}
-@media (max-width: 920px){
-    .text__information-cover{
-        width: 100%;
-    }
-    .media__cover{
-        display: none;
-    }
-    .banner{
-        height: auto;
-        flex-wrap: wrap;
-    }
-
-    .banner__text{
-        width: 100%;
-        margin-top: -100px;
-    }
-
-    #icon_fire{
-        display: none;
-    }
-    #icon_heart{
-        left: 0%;
-    }
-
-    /* *******ANIMACION************* */
-   
+@media (max-width: 800px){
+ body{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+ }
+ .slider{
+    height: auto;
+ }
+ .menu__container,
+ .detailed,
+ .contact,
+ .news{
+    display: none;
+ }
+ .container__header i{
+    display: block;
+ }
+ .descriptionContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+ #desc{
+    width: 100vw;
+ }
+ .container__banner,
+ .socialNet{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .socialNet{
+    flex-direction: column;
+ }
 }
   
