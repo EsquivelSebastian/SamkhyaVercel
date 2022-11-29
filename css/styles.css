@@ -13,16 +13,33 @@ body{
     display: block;
     font-family: 'Poppins', sans-serif;
     -ms-overflow-style: none; /* for Internet Explorer, Edge */
-    scrollbar-width: none; /* for Firefox */
+     scrollbar-width: none; /*for Firefox */
     overflow-y: scroll; 
 }
 
+
   
-  body::-webkit-scrollbar {
-    display: none; /* for Chrome, Safari, and Opera */
+ 
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
   }
-
-
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #ba9fe7;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #721aff; 
+  }
 
 header{
     
