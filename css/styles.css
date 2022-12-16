@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;1,200;1,400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins:wght@200;400&family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Dancing+Script&family=Poppins:wght@200;400&family=Rubik:ital,wght@0,300;0,400;1,300&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -69,7 +70,7 @@ header{
 }
 
 .menu__container #logo{
-    height: 12vh;
+    height: 9.5vh;
 }
 
 
@@ -244,6 +245,24 @@ header{
 #desc{
     font-size: 15px;
 }
+#nombres{
+    font-family: 'Allura', cursive;
+    font-size: 45px;
+    text-align: justify;
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+}
+.card button {
+    padding: 2px 15px 2px 15px;
+    margin-top: 10px;
+    background-color: #ba9fe7;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Allura', cursive;
+    font-size: 25px;
+}
 .imgContainer{
     margin-top: 0;
 }
@@ -403,6 +422,11 @@ header{
  }
  .card{
     margin-bottom: 45px;
+
+    
+ }
+ #name {
+    font-family: 'Allura', cursive;
  }
  .imgContainer img{
     width: 105px;
