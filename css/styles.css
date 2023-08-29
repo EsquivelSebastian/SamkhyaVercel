@@ -6,7 +6,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', 'Montserrat' ,sans-serif;
 }
 
 body{
@@ -58,6 +57,9 @@ header{
     /* background-color: rgb(68, 47, 120); */
    background-color: #b891f7;
     height: 5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    
 }
 
 
@@ -100,6 +102,8 @@ header{
 .menu__item:hover{
      --clip: polygon(0 0, 100% 0, 100% 100%, 0% 100%); 
      --transform: rotate(0) ;
+     text-shadow: 1px 0 2px rgba(255, 255, 255, 1); /* Brillo blanco */
+
     }
 
 .menu__link{
@@ -110,9 +114,7 @@ header{
     height: 100%;
     align-items: center;
 }
-.menu__link:hover{
-    background-color: #764fb5ad;;
-}
+
 
 .menu__item a{
     color: #ffe5fe;
@@ -173,12 +175,11 @@ header{
     justify-content: center;
     align-items: center;
     background-size: cover;
-    
     padding-bottom: 40px;
 }
 .slider{
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     margin: auto;
     overflow: hidden;
 }
@@ -194,6 +195,7 @@ header{
     list-style: none;
     width: 100%;
 }
+
 .slider img{
     width: 100%;
 }
@@ -268,14 +270,16 @@ header{
     font-size: 25px;
 }
 .imgContainer{
-    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .imgContainer img{
     border-radius: 100%;
     width: 50%;
     height: auto;
-    margin-top: 0;
-    margin-bottom: auto;
+    margin: auto;
+
 }
 
 
@@ -363,13 +367,22 @@ header{
   .menu__container{
     position: relative;
     top: 0;
-    width: 100vw;
   }
  .menu{
-    padding-right: 15px;
     font-size: 25px;
  
     width: 100vw;
+ }
+ .img__menu{
+    width: auto;
+    height: auto;
+ }
+ .menu img{
+    position: relative;
+    top: 0.8rem;
+    left: 0.8rem;
+    height: 50px;
+    width: 80px;
  }
 
  .menu__links{
