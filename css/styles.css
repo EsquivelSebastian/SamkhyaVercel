@@ -379,18 +379,12 @@ header{
  }
  .menu img{
     position: relative;
-    top: 0.8rem;
-    left: 0.8rem;
     height: 50px;
     width: 80px;
  }
 
  .menu__links{
-    display: block;
-    z-index: 2;
-    margin-top: 80px;
-    margin-right: 0%;
-    padding-right: 0%;
+    display: none;
  }
  .menu__links > li{
     background-color: #b891f7;
@@ -435,8 +429,9 @@ header{
  }
  .card{
     margin-bottom: 45px;
-
-    
+ }
+ .card button{
+    width: 8rem;
  }
  #name {
     font-family: 'Allura', cursive;
@@ -459,6 +454,10 @@ header{
  }
 
  .none{
-    display: none;
+    display: block;
+    z-index: 2;
+    margin-top: 10rem;
+    margin-right: 0%;
+    padding-right: 0%;
  }
 }
