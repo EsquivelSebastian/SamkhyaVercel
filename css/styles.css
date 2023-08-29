@@ -44,7 +44,8 @@ body{
 
 header{
     
-    position: relative;
+    position: fixed;
+    width: 100vw;
     z-index: 1;
 }
 
@@ -55,9 +56,10 @@ header{
 
 .menu{
     /* background-color: rgb(68, 47, 120); */
-   background-color: #8c6dbf;
-    height: 70px;
+   background-color: #b891f7;
+    height: 5rem;
 }
+
 
 .menu__container{
     display: flex;
@@ -90,7 +92,7 @@ header{
 }
 .menu__item--active{
     --transform: rotate(0);
-    --background: #5e7094;
+    --background: #b891f7;
 }
 .menu__item--show{
     background-color: var(--background);
@@ -109,7 +111,7 @@ header{
     align-items: center;
 }
 .menu__link:hover{
-    background-color: #BA629C;;
+    background-color: #764fb5ad;;
 }
 
 .menu__item a{
@@ -137,7 +139,7 @@ header{
     bottom: 0;
     width: max-content;
     transform: translateY(100%);
-    background-color: #8c6dbf;
+    background-color: #b891f7;
 }
 
 .menu__burguer{
@@ -236,14 +238,16 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    text-align:center;
     flex-direction: column;
     height: fit-content;
     width: 19vw;
     
 }
 #desc{
-    font-size: 15px;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    color: #2c2c2c;
 }
 #nombres{
     font-family: 'Allura', cursive;
@@ -256,7 +260,7 @@ header{
 .card button {
     padding: 2px 15px 2px 15px;
     margin-top: 10px;
-    background-color: #ba9fe7;
+    background-color: #b891f7;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -285,14 +289,14 @@ header{
     height: 400px;
     display: flex;
     align-items: center;
-    background: #8c6dbf;
+    background: #b891f7;
     position: relative;
 }
 
 .container__banner{
     display: flex;
     height: 10vh;
-    background-color: #8c6dbf;
+    background-color: #b891f7;
    justify-content: space-evenly;
    flex-direction: row-reverse;
 }
@@ -357,18 +361,14 @@ header{
     display: none; /* for Chrome, Safari, and Opera */
   }
   .menu__container{
-    display: flex;
-    justify-content: end;
-    margin-top: 10vh;
-    margin-left: 50vw;
+    position: relative;
+    top: 0;
+    width: 100vw;
   }
  .menu{
-    display: flex;
-    justify-content: end;
-    align-items: center;
     padding-right: 15px;
     font-size: 25px;
-    position: fixed;
+ 
     width: 100vw;
  }
 
@@ -380,7 +380,7 @@ header{
     padding-right: 0%;
  }
  .menu__links > li{
-    background-color: #b785a685;
+    background-color: #b891f7;
  }
 
 
