@@ -669,6 +669,7 @@ main {
         border-left: 1px solid grey
     }
     #nmt{
+        display: block;
         font-family: 'Oxygen', sans-serif;
         font-size: x-large;
         margin: 0 auto;
