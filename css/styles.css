@@ -78,10 +78,15 @@ header {
     margin: 0 auto;
     align-items: center;
 }
+.logoBackground{
+    background-color: #e8e8e8;
+    border-radius: 50%;
+}
 
 .menu__container #logo {
     height: 100%;
 }
+
 
 
 .menu__links {
@@ -591,6 +596,15 @@ main {
         display: block;
         cursor: pointer;
         position: absolute;
+        animation: latido 1s infinite alternate; /* Aplicamos la animación */
+    }
+    @keyframes latido {
+        0% {
+            transform: scale(1);
+        }
+        100% {
+            transform: scale(1.1);
+        }
     }
 
     main {
