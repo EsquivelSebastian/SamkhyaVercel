@@ -7,7 +7,7 @@ function show_menu(){
 }
 
 function playAudio(){
-    let sound = ocument.getElementById("audio")
+    let sound = document.getElementById("audio")
     sound.volume(0.333);
     sound.addEventListener("onload").playAudio();
 
