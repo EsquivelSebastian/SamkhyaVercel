@@ -6,9 +6,13 @@ function show_menu(){
 
 }
 
-function playAudio(){
-    let sound = document.getElementById("audio")
-    sound.volume(0.333);
-    sound.addEventListener("onload").playAudio();
+document.addEventListener('DOMContentLoaded', function() {
+    var miAudio = document.getElementById('audio');
+    
+    miAudio.addEventListener('canplay', function() {
+      miAudio.volume = 0.333; // Cambia este valor según el volumen que desees (entre 0 y 1)
+      miAudio.playAudio();
+    });
+  });
 
-}
+
