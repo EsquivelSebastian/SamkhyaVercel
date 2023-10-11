@@ -535,8 +535,35 @@ main {
 #nmt {
     display: none;
 }
+/* ****   comunidad  ***** */
+.comunidad {
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    padding-top: 3rem;
+}
+.comunidad p{
+    
+    font-family: 'Montserrat', sans-serif;
+    font-size: large;
+}
 
+.cominidadMain {
+    padding-top: 5rem;
+    padding-left: 0.5rem;
+    width: 40vw;
+    align-items: center;
+}
 
+.cominidadMain h1 {
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: x-large;
+
+}
+
+/* Mobile */
 
 @media (max-width: 800px) {
     body {
@@ -610,6 +637,7 @@ main {
         animation: latido 1s infinite alternate;
         /* Aplicamos la animación */
     }
+    
 
     @keyframes latido {
         0% {
@@ -735,32 +763,13 @@ main {
     .distroMob {
         display: flex;
     }
+    /* ****   comunidad  ***** */
+
+
+    .cominidadMain{
+        padding-right: 10px;
+        width: 100vw;
+        text-align: left;
+    }
 }
 
-/* ****   comunidad  ***** */
-.comunidad {
-    display: flex;
-    width: 100vw;
-    justify-content: center;
-    padding-top: 3rem;
-}
-.comunidad p{
-    
-    font-family: 'Montserrat', sans-serif;
-    font-size: large;
-}
-
-.cominidadMain {
-    padding-top: 5rem;
-    padding-left: 0.5rem;
-    width: 40vw;
-    align-items: center;
-}
-
-.cominidadMain h1 {
-    text-align: center;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    font-size: x-large;
-
-}
