@@ -31,20 +31,12 @@ body {
     width: 10px;
 }
 
-/* Track */
-::-webkit-scrollbar-track {
-    background: #f1f1f1;
-}
 
-/* Handle */
-::-webkit-scrollbar-thumb {
-    background: #ba9fe7;
-}
+
+
 
 /* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-    background: #721aff;
-}
+
 
 header {
 
@@ -78,13 +70,14 @@ header {
     margin: 0 auto;
     align-items: center;
 }
-.logoBackground{
+
+.logoBackground {
     background-color: #e8e8e8;
     border-radius: 50%;
 }
 
-.menu__container #logo {
-    height: 100%;
+#logo {
+    height: 70px;
 }
 
 
@@ -127,7 +120,7 @@ header {
 #hoverB:hover {
     font-weight: 700;
     color: white;
-    transition:  0.5s ease;
+    transition: 0.5s ease;
     font-size: 18px;
 }
 
@@ -206,30 +199,36 @@ main {
     height: 30%;
 }
 
-.loadbackImg{
+.loadbackImg {
     position: absolute;
     background-color: transparent;
-   
+
 }
-#imgload{
+
+#imgload {
     height: 300px;
-    animation: aparecer 30s infinite;    
+    animation: aparecer 30s infinite;
     animation-timing-function: ease-in-out;
 }
+
 @keyframes aparecer {
     0% {
-      opacity: 0;
-    }
-    80%{
         opacity: 0;
     }
-    88%{
+
+    80% {
         opacity: 0;
     }
+
+    88% {
+        opacity: 0;
+    }
+
     100% {
-      opacity: 1;
+        opacity: 1;
     }
-  }
+}
+
 .slider {
     margin: auto;
     overflow: hidden;
@@ -239,10 +238,11 @@ main {
     padding: 0%;
     display: flex;
     width: 500%;
-    animation: run 30s infinite ;
+    animation: run 30s infinite;
     animation-timing-function: ease-in;
 
 }
+
 @keyframes run {
     0% {
         margin-left: 0%;
@@ -306,7 +306,7 @@ main {
     background-image: url(../media/FATi-252.jpg);
     background-size: cover;
     height: 100%;
-    
+
 }
 
 .slider__img1 {
@@ -337,21 +337,22 @@ main {
 
 }
 
-#img0 p{
+#img0 p {
     width: 50%;
     margin-left: 50%;
     text-align: center;
     top: 20%
-
 }
-#img1 p{
+
+#img1 p {
     width: 30%;
     margin-left: 60%;
     text-align: center;
     top: 20%;
-    color:#721aff;
+    color: #721aff;
     opacity: 0.4;
 }
+
 .slider P {
     position: relative;
     backdrop-filter: blur(3px);
@@ -363,11 +364,11 @@ main {
 }
 
 
-#definition{
+#definition {
     display: flex;
 }
 
-#defTxt{
+#defTxt {
     font-family: 'Montserrat';
     text-align: center;
     font-size: x-large;
@@ -393,7 +394,7 @@ main {
     flex-direction: column;
     height: fit-content;
     width: 19vw;
-    background: linear-gradient( rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
 }
 
 
@@ -434,8 +435,10 @@ main {
 
 .imgContainer {
     position: relative;
-    width: 300px; /* Ajusta el ancho según tus necesidades */
-    height: 400px; /* Ajusta la altura según tus necesidades */
+    width: 300px;
+    /* Ajusta el ancho según tus necesidades */
+    height: 400px;
+    /* Ajusta la altura según tus necesidades */
 }
 
 #vicky,
@@ -451,9 +454,11 @@ main {
     bottom: 0;
     left: 0;
     right: 0;
-    height: 70%; /* Ajusta la altura del degradado según tus necesidades */
+    height: 70%;
+    /* Ajusta la altura del degradado según tus necesidades */
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.9));
 }
+
 /*BANNER*/
 
 .container__banner {
@@ -465,7 +470,7 @@ main {
 .container__banner {
     display: flex;
     background-color: #b891f7;
-    justify-content:space-around;
+    justify-content: space-around;
     padding-bottom: 2rem;
 }
 
@@ -486,23 +491,28 @@ main {
     color: #fff;
     padding: 0px 0 5px 0;
 }
-.contact{
+
+.contact {
     width: 400px;
 }
-.contact h1{
+
+.contact h1 {
     padding-top: 0.8rem;
 }
-.contact a{
+
+.contact a {
     display: flex;
     align-items: center;
     text-decoration: none;
     padding: 8px 0 0 3px;
     color: #fff;
 }
-.contact p{
+
+.contact p {
     padding: 0 0 8px 3px;
 
 }
+
 .contact,
 .news {
     display: flex;
@@ -517,12 +527,12 @@ main {
     display: flex;
 }
 
-#nm{
+#nm {
     margin-top: 3px;
     font-weight: bold;
 }
 
-#nmt{
+#nmt {
     display: none;
 }
 
@@ -577,7 +587,8 @@ main {
     .menu__links>li {
         background-color: #b891f7;
     }
-    .none{
+
+    .none {
         display: none;
     }
 
@@ -596,12 +607,15 @@ main {
         display: block;
         cursor: pointer;
         position: absolute;
-        animation: latido 1s infinite alternate; /* Aplicamos la animación */
+        animation: latido 1s infinite alternate;
+        /* Aplicamos la animación */
     }
+
     @keyframes latido {
         0% {
             transform: scale(1);
         }
+
         100% {
             transform: scale(1.1);
         }
@@ -613,23 +627,24 @@ main {
 
     }
 
-    #imgload{
+    #imgload {
         display: none;
     }
 
     .slider {
         height: auto;
     }
- #img0 p,
- #img1 p{
-    margin: 0 auto;
-    width: 50%;
-    font-size: 30px;
- }
+
+    #img0 p,
+    #img1 p {
+        margin: 0 auto;
+        width: 50%;
+        font-size: 30px;
+    }
 
     #logo,
     .detailed,
-    .contact a > p,
+    .contact a>p,
     .news {
         display: none;
     }
@@ -658,11 +673,13 @@ main {
         width: 105px;
         height: 130px;
     }
+
     .definition {
         width: 100vw;
         margin: 0 auto;
     }
-    #defTxt{
+
+    #defTxt {
         text-align: justify;
         width: 90vw;
         font-size: large;
@@ -680,39 +697,70 @@ main {
         justify-content: space-evenly;
 
     }
-    .container__banner a{
+
+    .container__banner a {
         width: fit-content;
         padding: 0 15px 0 5px;
     }
-    .contact{
+
+    .contact {
         display: flex;
         width: fit-content;
     }
-    .contact:nth-child(2){
+
+    .contact:nth-child(2) {
         border-left: 1px solid grey
     }
-    #nmt{
+
+    #nmt {
         display: block;
         font-family: 'Oxygen', sans-serif;
         font-size: x-large;
         margin: 0 auto;
     }
 
-    #nm{
-        font-size:12px;
+    #nm {
+        font-size: 12px;
         text-align: center;
     }
-    .contact h1{
+
+    .contact h1 {
         display: none;
     }
-    .contact i{
+
+    .contact i {
         font-size: 20px;
     }
 
-    .distroMob{
+    .distroMob {
         display: flex;
     }
+}
 
+/* ****   comunidad  ***** */
+.comunidad {
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    padding-top: 3rem;
+}
+.comunidad p{
+    
+    font-family: 'Montserrat', sans-serif;
+    font-size: large;
+}
 
+.cominidadMain {
+    padding-top: 5rem;
+    padding-left: 0.5rem;
+    width: 40vw;
+    align-items: center;
+}
+
+.cominidadMain h1 {
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: x-large;
 
 }

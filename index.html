@@ -19,7 +19,10 @@
     <script src="https://kit.fontawesome.com/cb0eb785e8.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body onload="playAudio" >
+    <audio id="audio" autoplay  loop>
+        <source  src="/media/ambienteSound.wav" type="audio/wav">
+    </audio>
     <header>
         <div class="container__header">
 
@@ -33,7 +36,7 @@
                     <img id="logo" src="media/logoSamkhya.gif" alt="">
                     <ul class="menu__links none">
                         <li class="menu__item">
-                            <a href="#" class="menu__link" id="hoverB">SAMKHYA</a>
+                            <a href="/comunidad.html" class="menu__link" id="hoverB">COMUNIDAD SAMKHYA</a>
                         </li>
                         <li class="menu__item">
                             <a href="#" class="menu__link" id="hoverB">SAMKHYA MARKET</a>
