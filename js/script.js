@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var miAudio = document.getElementById('audio');
     
     miAudio.addEventListener('canplay', function() {
-      miAudio.volume = 0.222; // Cambia este valor según el volumen que desees (entre 0 y 1)
+      miAudio.volume = 0.1; // Cambia este valor según el volumen que desees (entre 0 y 1)
       miAudio.playAudio();
     });
   });
