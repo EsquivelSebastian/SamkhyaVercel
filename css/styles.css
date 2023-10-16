@@ -52,11 +52,11 @@ header {
 
 .menu {
     /* background-color: rgb(68, 47, 120); */
-    background-color: #b891f7;
+    background-color: rgb(210, 178, 167);
     height: 5rem;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-
+    opacity: 0.95;
 }
 
 
@@ -78,6 +78,7 @@ header {
 
 #logo {
     height: 70px;
+    opacity: 1;
 }
 
 
@@ -86,7 +87,7 @@ header {
     height: 100%;
     transition: transform .5s;
     display: flex;
-
+    opacity: 1;
 }
 
 .menu__item {
@@ -120,23 +121,25 @@ header {
 #hoverB:hover {
     font-weight: 700;
     color: white;
-    transition: 0.5s ease;
+    transition: 0.6s ease;
     font-size: 18px;
+    opacity: none;
 }
 
 
 .menu__link {
-    color: #fff;
     text-decoration: none;
     padding: 0 30px;
     display: flex;
     height: 100%;
     align-items: center;
+    opacity: 1;
 }
 
 
 .menu__item a {
-    color: #ffe5fe;
+    color: white;
+    opacity: 1;
 }
 
 .menu__nesting {
@@ -163,7 +166,7 @@ header {
     bottom: 0;
     width: max-content;
     transform: translateY(100%);
-    background-color: #b891f7;
+    background-color: rgb(210, 178, 167);
 }
 
 .menu__burguer {
@@ -417,7 +420,7 @@ main {
 .card button {
     padding: 2px 15px 2px 15px;
     margin-top: 10px;
-    background-color: #b891f7;
+    background-color: rgb(224, 141, 104);
     border: none;
     cursor: pointer;
     font-family: 'Allura', cursive;
@@ -469,7 +472,7 @@ main {
 
 .container__banner {
     display: flex;
-    background-color: #b891f7;
+    background-color: rgb(224, 141, 104);
     justify-content: space-around;
     padding-bottom: 2rem;
 }
@@ -535,27 +538,50 @@ main {
 #nmt {
     display: none;
 }
+
 /* ****   comunidad  ***** */
+
+.comunidad img {
+    position: absolute;
+    width: 390px;
+}
+
+#imgComu0 {
+    left: 2%;
+    top: 18%;
+}
+
+#imgComuI {
+    right: 2%;
+    top: 80%;
+}
+
+#imgComuII {
+    left: 2%;
+    top: 80%;
+}
+
 .comunidad {
     display: flex;
     width: 100vw;
     justify-content: center;
     padding-top: 3rem;
 }
-.comunidad p{
-    
+
+.comunidad p {
+
     font-family: 'Montserrat', sans-serif;
     font-size: large;
 }
 
-.cominidadMain {
+.comunidadMain {
     padding-top: 5rem;
-    padding-left: 0.5rem;
     width: 40vw;
     align-items: center;
 }
 
-.cominidadMain h1 {
+
+.comunidadMain h1 {
     text-align: center;
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -612,7 +638,7 @@ main {
     }
 
     .menu__links>li {
-        background-color: #b891f7;
+        background-color: rgb(210, 178, 167);
     }
 
     .none {
@@ -637,7 +663,7 @@ main {
         animation: latido 1s infinite alternate;
         /* Aplicamos la animación */
     }
-    
+
 
     @keyframes latido {
         0% {
@@ -763,13 +789,249 @@ main {
     .distroMob {
         display: flex;
     }
+
     /* ****   comunidad  ***** */
 
+}
 
-    .cominidadMain{
-        padding-right: 10px;
-        width: 100vw;
-        text-align: left;
+table>caption {
+    border: 1px solid grey;
+    border-radius: 15px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #ffffff;
+    font-size: medium;
+}
+
+thead>tr>th {
+    background-color: #29a6F6;
+    border: 1px solid white;
+    border-radius: 10px;
+    height: 10px;
+    text-align: center;
+    vertical-align: center;
+    margin: 1%;
+    padding: 1%;
+}
+
+tr:nth-child(odd) {
+
+    border-radius: 10px 10px 10px 10px;
+    padding: 1%;
+    margin: 1%;
+}
+
+tr:nth-child(even) {
+    border-radius: 10px 10px 10px 10px;
+    padding: 1%;
+    margin: 1%;
+}
+
+tr:last-child {
+    border-radius: 0 0 10px 10px;
+    padding: 1%;
+    margin: 1%;
+}
+
+tr:last-child>td:first-child {
+    border-radius: 10px;
+    padding: 1%;
+    margin: 1%;
+}
+
+tr:last-child>td:last-child {
+    padding: 1%;
+    margin: 1%;
+    border-radius: 10px;
+}
+
+table.cal>tbody>th,
+td {
+    display: in-line;
+    width: 5%;
+    margin: 2%;
+    padding: 2%;
+    height: 30px;
+    border: 2px outset white;
+    vertical-align: top;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.horas {
+    font-size: medium;
+
+}
+
+.lunes,
+.martes,
+.miercoles,
+.jueves,
+.viernes {
+    padding: 0;
+    margin: 0;
+    background-color: #FFCDD2;
+
+}
+
+
+.comunidadMain {
+    width: 40vw;
+    text-align: left;
+    overflow: none;
+    padding-bottom: 2rem;
+}
+
+.comunidad p {
+    line-height: 1.6;
+}
+
+
+
+.comunidad p {
+    line-height: 1.6;
+
+}
+
+#comunidadArgentinaBody {
+    margin-top: 6rem;
+}
+
+table.cal {
+    display: inline-block;
+    width: 96vw;
+    border-spacing: 0;
+    border: 1px solid grey;
+    border-radius: 20px 20px 20px 20px;
+    padding: 2%;
+    margin: 2%;
+}
+
+table>caption {
+    border: 5px solid grey;
+    border-radius: 15px;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #008080;
+    color: #ffffff;
+    font-size: x-large;
+    padding: 1% 1% 1% 1%;
+    margin: 0% 2% 2% 2%;
+}
+
+thead>tr>th {
+    background-color: #29a6F6;
+    border: 1px solid white;
+    border-radius: 10px;
+    height: 50px;
+    text-align: center;
+    vertical-align: center;
+    font-size: larger;
+    margin: 1%;
+    padding: 1%;
+}
+
+tr:nth-child(odd) {
+
+    border-radius: 10px 10px 10px 10px;
+    padding: 1%;
+    margin: 1%;
+}
+
+tr:nth-child(even) {
+    border-radius: 10px 10px 10px 10px;
+    padding: 1%;
+    margin: 1%;
+}
+
+tr:last-child {
+    border-radius: 0 0 10px 10px;
+    padding: 1%;
+    margin: 1%;
+}
+
+tr:last-child>td:first-child {
+    border-radius: 10px;
+    padding: 1%;
+    margin: 1%;
+}
+
+tr:last-child>td:last-child {
+    padding: 1%;
+    margin: 1%;
+    border-radius: 10px;
+}
+
+table.cal>tbody>th,
+td {
+    width: 10%;
+    margin: 2%;
+    padding: 2%;
+    height: 60px;
+    border: 2px outset white;
+    vertical-align: top;
+    text-align: center;
+    border-radius: 10px;
+}
+
+
+th {
+    text-align: center;
+    background: #ffffff;
+    border: 2px outset grey;
+}
+
+.horas {
+    margin: 0;
+    padding: 0;
+    background-color: #FFD180;
+}
+
+.Lengua {
+    padding: 0;
+    margin: 0;
+    background-color: #FFCDD2;
+}
+
+.lunes,
+.martes,
+.miercoles,
+.jueves,
+.viernes {
+ 
+    background-color: #FFCDD2;
+}
+
+
+#imgComu0,
+#imgComuI {
+    animation: aparecerDesvanecer 15s infinite;
+}
+
+@keyframes aparecerDesvanecer {
+
+    0%,
+    100% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
     }
 }
 
+#imgComuII {
+    animation: Desvanecer 15s infinite;
+}
+
+@keyframes Desvanecer {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
