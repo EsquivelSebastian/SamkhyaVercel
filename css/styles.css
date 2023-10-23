@@ -567,11 +567,13 @@ main {
     justify-content: center;
     padding-top: 3rem;
 }
-.comunidadMX{
+
+.comunidadMX {
     padding-left: 0.2rem;
     padding-top: 5rem;
 }
-.comunidadMX > h1,
+
+.comunidadMX>h1,
 .comunidadMX p {
     padding: 0.5rem;
 }
@@ -597,6 +599,7 @@ main {
     font-size: x-large;
 
 }
+
 .comunidadMain {
     width: 40vw;
     text-align: left;
@@ -612,11 +615,16 @@ main {
     line-height: 1.6;
 
 }
+.CenterTable{
+    display: flex;
+justify-content: center;
+
+}
 
 #comunidadArgentinaBody {
-    margin-top: 6rem;
-    margin-left: 15vw;
+    padding-top: 6rem;
 }
+
 table>caption {
     border: 1px solid grey;
     border-radius: 15px;
@@ -664,6 +672,7 @@ td {
 }
 
 table.cal {
+   
     display: inline-block;
     border-spacing: 0;
     border-radius: 20px 20px 20px 20px;
@@ -724,7 +733,7 @@ th {
 .miercoles,
 .jueves,
 .viernes {
- 
+
     background-color: #FFCDD2;
 }
 
@@ -964,56 +973,64 @@ th {
     }
 
     /* ****   comunidad  ***** */
-.comunidad img{
-    display: none;
-}
-.comunidadMain{
-    width: 96vw;
-}
-table.cal {
-    display: inline-block;
-    width: 97vw;
-    border-spacing: 0;
-    border: 1px solid grey;
-    border-radius: 20px 20px 20px 20px;
-    padding: 1.5%;
-    margin: 1.5%;
-}
+    #comunidadArgentinaBody {
+        margin-left: none;
+    }
 
-table>caption {
-    border: 1px solid grey;
-    border-radius: 15px;
-    text-transform: uppercase;
-    text-align: center;
-    background-color: #008080;
-    color: #ffffff;
-    font-size: x-large;
-    padding: 0.5% 0.5% 0.5% 0.5%;
-    margin: 0.5% 0.5% 0.5% 0.5%;
+    .comunidad img {
+        display: none;
+    }
 
-}
+    .comunidadMain {
+        width: 96vw;
+    }
 
-thead>tr>th {
-    background-color: #29a6F6;
-    border: 1px solid white;
-    border-radius: 10px;
-    text-align: center;
-    vertical-align: center;
-    font-size: medium;
-    font-weight: bold;
+    table.cal {
+        display: inline-block;
+        width: 97vw;
+        border-spacing: 0;
+        border: 1px solid grey;
+        border-radius: 20px 20px 20px 20px;
+        padding: 1.5%;
+        margin: 1.5%;
+    }
 
-}
-.horas{
-    font-size: small;
-}
-.lunes,
-.martes,
-.miercoles,
-.jueves,
-.viernes {
- 
-    background-color: #FFCDD2;
-    font-size: smaller;
+    table>caption {
+        border: 1px solid grey;
+        border-radius: 15px;
+        text-transform: uppercase;
+        text-align: center;
+        background-color: #008080;
+        color: #ffffff;
+        font-size: x-large;
+        padding: 0.5% 0.5% 0.5% 0.5%;
+        margin: 0.5% 0.5% 0.5% 0.5%;
 
-}
+    }
+
+    thead>tr>th {
+        background-color: #29a6F6;
+        border: 1px solid white;
+        border-radius: 10px;
+        text-align: center;
+        vertical-align: center;
+        font-size: medium;
+        font-weight: bold;
+
+    }
+
+    .horas {
+        font-size: small;
+    }
+
+    .lunes,
+    .martes,
+    .miercoles,
+    .jueves,
+    .viernes {
+
+        background-color: #FFCDD2;
+        font-size: smaller;
+
+    }
 }
